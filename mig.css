@@ -1,0 +1,116 @@
+/*
+//////////////////////////////////////////////////////////////////////////
+// File Name	: mig.css												//
+// Date	 		: 2015.03.18											//
+// Compiler 	: -														//
+// Os	 		: Window XP												//
+// Author		: Kim kyung min											//
+//----------------------------------------------------------------------//
+// ver			: 1.0.1													//
+// Description	: 검색홈페이지											//
+//////////////////////////////////////////////////////////////////////////
+*/
+/* mightgumball.css */
+body { 
+	font-family: Trebuchet MS, Verdana, Helvetica, Arial, san-serif; 
+	margin: 0;
+	text-align: center; 
+	background-color : #B0E6BE;
+}
+#container { 
+	border: 1px solid black;
+	margin: 0 auto; 
+	position: relative; 
+	text-align: left; 
+	width: 1000px; 
+}
+div#home_result{
+	margin-top: 10px;
+}
+div#form_container{ 
+	text-align : center; 
+	display : none;
+}
+div#nav_box{
+	border : 1px solid black;
+	margin : 0px;
+	background-color : #111;
+	padding : 0.3em;
+}
+div#nav_box ul {
+	list-style-type : none;
+}
+div#nav_box ul li {
+	display : inline;
+	padding: 0 1em;
+}
+div#nav_box ul li span, div#nav_box ul li a{ 
+	color : #fff;
+	font-weight : bold;
+	text-transform : uppercase;
+	text-decoration : none;
+	cursor : pointer;
+}
+div#nav_box ul li a:link, nav ul li a:visited {
+	border-bottom : none;
+}
+div#search_box  { 
+	margin-top : 10px;
+}
+div#search_button {
+	margin-top : 10px;
+	margin-bottom : 10px;
+}
+div#search_button input{
+	width : 200px;
+}
+div#search_box input{
+	width : 400px;
+}
+div#knowhow_box, div#result_box{
+	display : none;
+}	
+div#knowhow, div#result{
+	margin: 0 auto; 
+	position: relative; 
+	text-align: left; 
+	width: 1000px; 
+	background-color: #d9d9d9;
+	padding: 0px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 3px dashed black;
+}
+div.resultItem {
+	font-family: Verdana, Helvetica, sans-serif;
+	color: red;
+	padding: 10px;
+}
+div.not{
+	text-align: center; 
+	font-weight : bold;
+	font-size : 1.2em;
+}
+div.progress{
+	margin-top : 5px;
+	text-align: center; 
+}
+/* 홀수마다 배경색 지정.*/
+div.resultItem:nth-child(2n) {
+	background-color: #fafafa;
+}
+/* 첫번째 자식노드의 테두리를 둥글게 설정 */
+div.resultItem:first-child {
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+/* 마지막 자식노드의 테두리를 둥글게 설정*/
+div.resultItem:last-child {
+	-webkit-border-bottom-left-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
